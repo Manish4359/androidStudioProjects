@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hotel Booking App</string>
+    <string name="hotel_1">Hotel 1</string>
+    <string name="hotel_2">Hotel 2</string>
+</resources>

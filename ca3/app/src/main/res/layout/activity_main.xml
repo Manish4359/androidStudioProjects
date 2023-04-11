@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_margin="15dp"
+        android:textFontWeight="500"
+        android:text="Book a hotel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotel1"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel_1" />
+
+            <Button
+                android:id="@+id/bookHotel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hotel2"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/hotel_2" />
+
+            <Button
+                android:id="@+id/bookHotel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

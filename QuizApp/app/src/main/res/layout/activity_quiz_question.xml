@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F6E6"
+    tools:context=".QuizQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:textStyle="bold"
+            android:text="what is the use of arrow functions?"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:elevation="5dp"
+            android:src="@drawable/ic_flag_of_india"/>
+
+        <LinearLayout
+            android:id="@+id/progressBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="20dp"
+                android:progress="1"
+                android:max="10"
+
+android:indeterminate="false"
+                />
+            <TextView
+                android:id="@+id/progressCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    android:textColor="#000"
+                android:padding="5dp"
+                android:text="1/10"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/opt1"
+            android:layout_width="match_parent"
+            android:text="option 1"
+            android:textSize="25dp"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:paddingVertical="5dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:id="@+id/opt2"
+            android:layout_width="match_parent"
+            android:text="option 1"
+            android:textSize="25dp"
+            android:paddingLeft="15dp"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/opt3"
+            android:layout_width="match_parent"
+            android:text="option 1"
+            android:textSize="25dp"
+            android:paddingLeft="15dp"
+            android:layout_marginVertical="10dp"
+            android:paddingVertical="5dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/opt4"
+            android:layout_width="match_parent"
+            android:text="option 1"
+            android:textSize="25dp"
+            android:paddingLeft="15dp"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:paddingVertical="5dp"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_marginTop="25dp"
+            android:background="#90AF50"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

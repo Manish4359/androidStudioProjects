@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/overflowMenu"
+        android:title="juhuyguyvu"
+        android:icon="@drawable/ic_menu_foreground"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about_foreground"
+                android:title="About"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_settings_foreground"
+                android:title="Settings"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_login_foreground"
+                android:title="Logout"
+                app:showAsAction="never"/>
+
+        </menu>
+    </item>
+</menu>
