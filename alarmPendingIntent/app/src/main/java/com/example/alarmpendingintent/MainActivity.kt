@@ -55,7 +55,6 @@ class MyAlarm:BroadcastReceiver(){
     override fun onReceive(context: Context?, intent: Intent?) {
 
         var mp = MediaPlayer.create(context, R.raw.music)
-
         mp.start()
         Toast.makeText(context,"alarm is ringing",Toast.LENGTH_LONG).show()
     }

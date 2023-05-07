@@ -29,6 +29,7 @@ class EditTextCustom(context: Context, attrs: AttributeSet?) :
             override fun afterTextChanged(s: Editable) {}
         })
     }
+
     fun show() {
         setOnTouchListener { view, motionEvent ->
             var isclicked:Boolean = false

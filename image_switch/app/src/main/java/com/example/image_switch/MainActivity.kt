@@ -53,6 +53,5 @@ class MainActivity : AppCompatActivity() {
             index = if (index + 1 < nameList.size) index + 1 else 0
             isw.setImageResource(nameList[index])
         }
-
     }
 }

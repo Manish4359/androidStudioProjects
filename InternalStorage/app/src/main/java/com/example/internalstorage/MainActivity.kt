@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import org.json.JSONObject
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
@@ -26,9 +27,14 @@ class MainActivity : AppCompatActivity() {
         editText=findViewById(R.id.edittext)
         textView=findViewById(R.id.textview)
 
+
+        var jsonObject = JSONObject();
+        jsonObject.put("Name", "manish");
+        jsonObject.put("registration", "123456");
+
         //save the text to a file
         btn1.setOnClickListener {
-            data=editText.text.toString()
+            data=jsonObject.toString()
             try {
                 val fout=openFileOutput(file, MODE_APPEND)
                 fout.write(data.toByteArray())

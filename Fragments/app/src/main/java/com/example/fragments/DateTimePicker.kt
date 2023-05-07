@@ -28,6 +28,7 @@ class DateTimePicker : AppCompatActivity() {
         btnTimePicker=findViewById(R.id.btn_time)
         textDate=findViewById(R.id.in_date)
         textTime=findViewById(R.id.in_time)
+
         btnDatePicker.setOnClickListener {
             val c=Calendar.getInstance()
             mYear=c[Calendar.YEAR]
@@ -38,10 +39,9 @@ class DateTimePicker : AppCompatActivity() {
                 {
                     view,year,monthOfYear,dayOfMonth
                     ->
-                    textDate.setText(dayOfMonth.toString()+ (monthOfYear+1)+"-"+year)
+                    textDate.setText(dayOfMonth.toString()+ "-"+(monthOfYear+1)+"-"+year)
                 },
                 mYear,mMonth,mDay
-
             )
             datePickerDialog.show()
         }
